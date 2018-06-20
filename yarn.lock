@@ -979,6 +979,10 @@ binary@^0.3.0:
     buffers "~0.1.1"
     chainsaw "~0.1.0"
 
+bindings@^1.1.1:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/bindings/-/bindings-1.3.0.tgz#b346f6ecf6a95f5a815c5839fc7cdb22502f1ed7"
+
 bl@^0.9.0:
   version "0.9.5"
   resolved "https://registry.yarnpkg.com/bl/-/bl-0.9.5.tgz#c06b797af085ea00bc527afc8efcf11de2232054"
@@ -2754,6 +2758,16 @@ getpass@^0.1.1:
   dependencies:
     assert-plus "^1.0.0"
 
+glob@7.0.3:
+  version "7.0.3"
+  resolved "https://registry.yarnpkg.com/glob/-/glob-7.0.3.tgz#0aa235931a4a96ac13d60ffac2fb877bd6ed4f58"
+  dependencies:
+    inflight "^1.0.4"
+    inherits "2"
+    minimatch "2 || 3"
+    once "^1.3.0"
+    path-is-absolute "^1.0.0"
+
 glob@7.0.x:
   version "7.0.6"
   resolved "https://registry.yarnpkg.com/glob/-/glob-7.0.6.tgz#211bafaf49e525b8cd93260d14ab136152b3f57a"
@@ -3150,6 +3164,13 @@ invariant@^2.2.2:
 invert-kv@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/invert-kv/-/invert-kv-1.0.0.tgz#104a8e4aaca6d3d8cd157a8ef8bfab2d7a3ffdb6"
+
+ioctl@^2.0.0:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/ioctl/-/ioctl-2.0.1.tgz#e9c05ee16e5754d7d1586bec5a734a8191175ada"
+  dependencies:
+    bindings "^1.1.1"
+    nan "^2.3.2"
 
 is-absolute-url@^2.0.0:
   version "2.1.0"
@@ -3806,7 +3827,7 @@ mz@^2.6.0:
     object-assign "^4.0.1"
     thenify-all "^1.0.0"
 
-nan@^2.3.2, nan@^2.4.0:
+nan@>=2.0.0, nan@^2.3.2, nan@^2.4.0:
   version "2.10.0"
   resolved "https://registry.yarnpkg.com/nan/-/nan-2.10.0.tgz#96d0cd610ebd58d4b4de9cc0c6828cda99c7548f"
 
@@ -4219,6 +4240,10 @@ plist@^2.0.0, plist@^2.1.0:
 pluralize@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/pluralize/-/pluralize-1.2.1.tgz#d1a21483fd22bb41e58a12fa3421823140897c45"
+
+pngjs@2.3.1:
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/pngjs/-/pngjs-2.3.1.tgz#11d1e12b9cb64d63e30c143a330f4c1f567da85f"
 
 postcss-calc@^5.2.0:
   version "5.3.1"
@@ -4961,6 +4986,15 @@ semver@~5.3.0:
   version "5.3.0"
   resolved "https://registry.yarnpkg.com/semver/-/semver-5.3.0.tgz#9b2ce5d3de02d17c6012ad326aa6b4d0cf54f94f"
 
+sense-hat-led@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/sense-hat-led/-/sense-hat-led-1.0.1.tgz#c3ee249fdce584028cd575baa384667c410dfbf1"
+  dependencies:
+    glob "7.0.3"
+    ioctl "^2.0.0"
+    pngjs "2.3.1"
+    sleep "3.0.1"
+
 set-blocking@^2.0.0, set-blocking@~2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/set-blocking/-/set-blocking-2.0.0.tgz#045f9782d011ae9a6803ddd382b24392b3d890f7"
@@ -5000,6 +5034,12 @@ single-line-log@^1.1.2:
 slash@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/slash/-/slash-1.0.0.tgz#c41f2f6c39fc16d1cd17ad4b5d896114ae470d55"
+
+sleep@3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/sleep/-/sleep-3.0.1.tgz#be4d17c579360e07e04ed8172ba2b10a69054df3"
+  dependencies:
+    nan ">=2.0.0"
 
 slice-ansi@0.0.4:
   version "0.0.4"
